@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.2 Découverte du protocole TCP/IP | Communication interne à un réseau informatique 4° </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="fr" />
+<meta name="author" content="Alain AARAGE" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="interactive-video.css" />
+<script type="text/javascript" src="interactive-video.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-198"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Ignorer la navigation</a></p>
+<div id="header" ><div id="headerContent">Communication interne à un réseau informatique 4°</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Communication interne à un réseau informatique</a></li>
+   <li><a href="travail_prparatoire__la_squence.html" class="no-ch">Travail préparatoire à la séquence</a></li>
+   <li><a href="problmatique_de_la_squence.html" class="no-ch">Problématique de la séquence</a></li>
+   <li class="current-page-parent"><a href="sance_1_configuration_dun_rseau_informatique.html" class="current-page-parent daddy">Séance 1: Configuration d'un réseau informatique</a>
+   <ul>
+      <li><a href="11_notions_de_rseau.html" class="no-ch">1.1 notions de réseau</a></li>
+      <li id="active"><a href="12_dcouverte_du_protocole_tcpip.html" class="active no-ch">1.2 Découverte du protocole TCP/IP</a></li>
+      <li><a href="13_installation_du_simulateur_rseau_filius.html" class="no-ch">1.3 Installation du simulateur réseau "Filius"</a></li>
+      <li><a href="14_procdure_de_rcupration_dun_fichier_filius_existant.html" class="no-ch">1.4 Procédure de récupération d'un fichier "Filius" existant</a></li>
+      <li><a href="15_fonctionnement_et_utilit_dun_commutateur.html" class="daddy">1.5 Fonctionnement et utilité d'un commutateur</a>
+      <ul class="other-section">
+         <li><a href="dtails_sur_adresse_ip_et_commandes_de_base.html" class="no-ch">Détails sur adresse IP et commandes de base</a></li>
+         <li><a href="etape_1_configuration_des_adresses_ip.html" class="no-ch">Etape 1: Configuration des adresses IP</a></li>
+         <li><a href="etape_2_vrification_des_configurations_ip_des_machines.html" class="no-ch">Etape 2: Vérification des configurations IP des machines</a></li>
+         <li><a href="etape_3_vrification_des_communications_des_machines.html" class="no-ch">Etape 3: Vérification des communications des machines</a></li>
+      </ul>
+      </li>
+      <li><a href="16_fonctionnement_et_utilit_dun_routeur.html" class="daddy">1.6 Fonctionnement et utilité d'un routeur</a>
+      <ul class="other-section">
+         <li><a href="etape_1_ajout_des_passerelles_sur_les_machines_clients_et_serveurs.html" class="no-ch">Etape 1: Ajout des passerelles sur les machines (clients et serveurs)</a></li>
+         <li><a href="etape_2_configuration_des_adresses_ip_pour_un_routeur.html" class="no-ch">Etape 2: Configuration des adresses IP pour un routeur</a></li>
+         <li><a href="etape_3_vrification_des_configurations_ip_des_machines_possdant_des_passerelles.html" class="no-ch">Etape 3: Vérification des configurations IP des machines possédant des passerelles</a></li>
+         <li><a href="etape_4_vrification_des_communications_des_machines_possdant_des_passerelles.html" class="no-ch">Etape 4: Vérification des communications des machines possédant des passerelles</a></li>
+      </ul>
+      </li>
+      <li><a href="17_ma_synthse_de_la_sance.html" class="no-ch">1.7 Ma synthèse de la séance</a></li>
+   </ul>
+   </li>
+   <li><a href="sance_2_communication_dun_rseau_informatique.html" class="daddy">Séance 2: Communication d'un réseau informatique</a>
+   <ul class="other-section">
+      <li><a href="21_notions_de_protocole_en_couches.html" class="no-ch">2.1 Notions de "protocole en couches"</a></li>
+      <li><a href="22_notions_de_port_de_communication.html" class="no-ch">2.2 Notions de "port de communication"</a></li>
+      <li><a href="23_simulation_de_communication__lintrieur_dun_rseau_avec_le_simulateur_rseau_filius.html" class="no-ch">2.3 Simulation de communication à l’intérieur d’un réseau (avec le simulateur réseau: Filius)</a></li>
+   </ul>
+   </li>
+   <li><a href="sauvegarde_et_rouverture_de_fichier_filius.html" class="no-ch">Sauvegarde et réouverture de fichier Filius</a></li>
+   <li><a href="quiz_bilan_de_la_squence.html" class="no-ch">Quiz bilan de la séquence</a></li>
+   <li><a href="compte_rendu.html" class="no-ch">Compte rendu</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="11_notions_de_rseau.html" class="prev"><span><span>&laquo; </span>Précédent</span></a> <span class="sep">| </span><a href="13_installation_du_simulateur_rseau_filius.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.2 Découverte du protocole TCP/IP</h1></div>
+<div class="iDevice_wrapper textIdevice em_iDevice" id="id423">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Consignes à respecter pour la vidéo interactive</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta423_413_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="font-size: 12pt;">-<strong>Regarder</strong> attentivement la vidéo. Celle ci peut s'arrêter à tout moment pour vous<strong> poser une question</strong>.</span></p>
+<p><span style="font-size: 12pt;">-Après chaque réponse, le résultat s'affiche (correct ou non)</span></p>
+<p><span style="font-size: 12pt;">-Vous devez ensuite <strong>recliquer</strong> sur la vidéo pour la faire repartir</span></p>
+<p><span style="font-size: 12pt;">-A la fin de la vidéo, vous pouvez <strong>accéder</strong> à vos résultats</span></p>
+<p><span style="font-size: 12pt;">-<strong>APPELER</strong> VOTRE PROFESSEUR afin qu'il puisse noter votre pourcentage de réussite</span></p>
+<p><span style="font-size: 12pt;"><em>Remarque: Le travail est validé à partir de 70% de bonnes réponses.</em></span></p>
+<p><span style="font-size: 12pt;">-<span style="background-color: #ffff00;">A l'aide de vos réponses précédentes</span>, <strong>compléter</strong> le chapitre 1.2 de votre document réponse</span></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper interactive-videoIdevice em_iDevice em_iDevice_presentation" id="id424">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header" style="background-image:url(icon_presentation.png)"><h2 class="iDeviceTitle">Vidéo interactive</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta424_410_2" class="block iDevice_content">
+			<div class="exe-interactive-video">				<p id="exe-interactive-video-file" class="js-hidden">					<a href="adresse_IP.mp4">mp4</a>				</p>				<script type="text/javascript">//<![CDATA[					
+var InteractiveVideo = {"slides":[{"type":"multipleChoice","question":"<p>Quel type d'adresse gère un commutateur (Switch)?</p>","answers":[["Une adresse postale",0],["Une adresse IP",0],["Une adresse MAC",1],["Une adresse du vendeur du matériel ",0]],"startTime":56},{"type":"multipleChoice","question":"<p>Quel type d'adresse gère un routeur?</p>","answers":[["Une adresse postale",0],["Une adresse IP",1],["Une adresse MAC",0],["Une  adresse du vendeur de matériel",0],["par 10",0]],"startTime":57},{"type":"multipleChoice","question":"<p>Que signifie l'acronyme IP?</p>","answers":[["Interactive Présentation",0],["Interactive Protocole",0],["Internet Présentation",0],["Internet Protocole",1]],"startTime":74},{"type":"multipleChoice","question":"<p>Quelles sont les deux propriétés d'une adresse IP?</p>","answers":[["Elle identifie le nom du vendeur de matériel",0],["Elle identifie le nom du réseau",1],["Elle identifie le code postal du destinataire",0],["Elle identifie le numéro du poste sur le réseau",1]],"startTime":177},{"type":"multipleChoice","question":"<p>Grâce à quels matériels un routeur peut-il se connecter à plusieurs réseaux?</p>","answers":[["Grâce à des cartes routières",0],["Grâce à des numéros de téléphones",0],["Grâce à des cartes réseaux",1],["propane",0]],"startTime":235},{"type":"multipleChoice","question":"<p>Quelle est la principale différence entre une adresse MAC et une adresse IP?</p>","answers":[["Une adresse MAC est modifiable alors qu'une adresse IP est figée",0],["Une adresse MAC est figée alors qu'une adresse IP est modifiable",1],["Une adresse MAC est pour un produit Apple, alors qu'une adresse IP est pour un PC Windows",0]],"startTime":249},{"type":"multipleChoice","question":"<p>A quoi correspond le \"masque\" d'une configuration IP?</p>","answers":[["Elle cache d'adresse IP",0],["Elle repère la partie \"réseau\" de l'adresse IP",1],["Elle repère la partie \"numéro de poste\" de l'adresse IP",0],["Elle cache l'adresse MAC",0]],"startTime":266},{"type":"multipleChoice","question":"<p>L'adresse IP peut elle remplacer l'adresse MAC?</p>","answers":[["Oui, elles sont interchangeables",0],["Non, car l'adresse IP est uniquement utilisée par le commutateur",0],["Non, car l'adresse IP est uniquement utilisée par le routeur",1]],"startTime":292},{"type":"multipleChoice","question":"<p>Un routeur peut il avoir plusieurs adresses IP?</p>","answers":[["Non, c'est totalement impossible",0],["C'est obligatoire afin qu'il puisse interconnecter des réseaux",1],["ça dépend des fois",0]],"startTime":341},{"type":"multipleChoice","question":"<p>Que faut-il définir sur chaque ordinateur d'un réseau afin qu'ils puissent communiquer avec ceux d'un autre réseau?</p>","answers":[["Son adresse IP suffit",0],["Son adresse IP et l'adresse IP du serveur (passerelle)",1],["L'adresse IP du serveur (passerelle) va remplacer son adresse IP",0]],"startTime":445},{"type":"multipleChoice","question":"<p>Doit-on utiliser le protocole IP même si l'on reste à l'intérieur d'un réseau?</p>","answers":[["Non, il n'y a pas besoin de protocole quand on reste à l'intérieur d'un réseau",0],["Oui, car cela évite d'avoir 2 règles différentes!",1],["Non, on utilise un autre protocole quand on reste à l'intérieur d'un même réseau",0]],"startTime":521},{"type":"multipleChoice","question":"<p>Les commutateurs sont ils complémentaires aux routeurs?</p>","answers":[["Non: ils servent à la même fonction",0],["Oui, car en cas de panne, les routeurs peuvent prendre le relais des commutateurs",0],["Oui, car les commutateurs interconnectent des réseaux et les routeurs interconnectent des postes",0],["Oui, car les commutateurs interconnectent des postes et les routeurs interconnectent des réseaux",1]],"startTime":595}],"i18n":{"start":"Commencer","results":"Résultats","slide":"Diapositive (frame)","score":"Note","seen":"Vu","total":"Total","seeAll":"Voir toutes les diapositives et répondre à toutes les questions","noSlides":"Cette vidéo n’a pas de diapositives interactives.","goOn":"Continuer","error":"Erreur","dataError":"Code incompatible","onlyOne":"Une seule vidéo interactive par page.","cover":"Couverture","fsWarning":"Sortez du mode ","right":"Correct !","wrong":"Incorrect","sortableListInstructions":"Saisissez et lâcher ou utilisez les flèches.","up":"Monter","down":"Descendre","rightAnswer":"Réponse correcte:","notAnswered":"Veuillez terminer l'activité","check":"Vérifier","newWindow":"Nouvelle fenêtre"}}				//]]></script>			</div><p class="sr-av"><video width="320" height="240" controls="controls" class="mediaelement"><source src="adresse_IP.mp4" /></video></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="11_notions_de_rseau.html" class="prev"><span><span>&laquo; </span>Précédent</span></a> <span class="sep">| </span><a href="13_installation_du_simulateur_rseau_filius.html" class="next"><span>Suivant<span> &raquo;</span></span></a>
+</div>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Créé avec eXeLearning<span> (Nouvelle fenêtre)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
